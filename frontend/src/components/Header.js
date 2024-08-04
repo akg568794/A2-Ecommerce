@@ -56,12 +56,9 @@ const Header = () => {
     <header className='h-16 shadow-md bg-white fixed w-full z-40'>
       <div className=' h-full container mx-auto flex items-center px-4 justify-between'>
             <div className=''>
-                <div className=''>
-                  <Link to={"/"}>
-                    <Logo w="w-20 md:w-24 lg:w-36" h="h-10 md:h-12 lg:h-14" />
-                  </Link>
-                </div>
-
+                <Link to={"/"}>
+                    <Logo w={90} h={50}/>
+                </Link>
             </div>
 
             <div className='hidden lg:flex items-center w-full justify-between max-w-sm border rounded-full focus-within:shadow pl-2'>
