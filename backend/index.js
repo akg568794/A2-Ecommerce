@@ -14,6 +14,13 @@ app.use(cors({
 app.use(express.json())
 app.use(cookieParser())
 
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "dist/index.html"), function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
 
 
 app.use("/api",router)
