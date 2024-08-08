@@ -27,7 +27,7 @@ const paymentController= async(request,response)=>{
                         currency:'inr',
                         product_data:{
                             name:item.productId.productName,
-                            images:item.productId.productImages,
+                            images:item.productId.productImage,
                             metadata:{
                                 productId:item.productId._id
                             }
